@@ -1,0 +1,117 @@
+
+/* body  */
+body {
+  background: url('./assets/Background-image.png') no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+}
+
+/* main container */
+.app {
+  padding: 30px;
+  border-radius: 16px;
+  width: 400px;
+  margin-top: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  text-align: center;
+}
+
+/* title */
+h1 {
+  color: #613141;
+  font-size: 32px;
+  font-weight: bolder;
+  margin-bottom: 25px;
+}
+
+/* form */
+.todo-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  border: 1.5px solid #dda0aa;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff7f8;
+  color: #333;
+}
+
+/* Add & action buttons */
+.todo-button,
+.action-button {
+  padding: 10px 16px;
+  font-size: 14px;
+  background-color: #e88f9c;
+  color: white;
+  border: none;
+  margin-left: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(232, 143, 156, 0.3);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transform: perspective(500px) translateZ(0);
+}
+
+.todo-button:hover,
+.action-button:hover {
+  background-color: #d76a7b;
+  transform: perspective(500px) translateZ(7px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(215, 106, 123, 0.5);
+  z-index: 2;
+}
+
+/* todo list */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+  background-color: #ffeef2;
+  padding: 12px 16px;
+  border-radius: 12px;
+  border: 1px solid #f4c1cc;
+  box-shadow: 0 4px 10px rgba(240, 190, 200, 0.3);
+}
+
+.todo-item.completed span {
+  text-decoration: line-through;
+  color: #b7aab1;
+}
+
+.todo-item span {
+  flex: 1;
+  margin-left: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* edit / delete  */
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 8px;
+  margin-right: 10px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: 1px solid #dda0aa;
+  background-color: #fff7f8;
+}
